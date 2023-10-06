@@ -7,7 +7,7 @@
             <div class="card bg-primary"> <!-- Cambio de fondo de color a azul -->
                 <div class="card-body">
                     <img src="" alt=""> <!-- Reemplaza con la URL de tu imagen -->
-                    {{ __('BIENVENIDOS') }}
+                    {{ __('BIENVENIDOS A MI PROGRAMA') }}
                 </div>
             </div>
         </div>
