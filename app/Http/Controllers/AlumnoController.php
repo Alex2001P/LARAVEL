@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-class Alumnocontroller extends Controller
+class AlumnoController extends Controller
 {
     public function index()
     {
@@ -206,4 +206,3 @@ class Alumnocontroller extends Controller
             }
         }
     }
-
