@@ -1,7 +1,10 @@
-<?php
+api.php: <?php
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 use App\Http\Controllers\AlumnoController;
 
 Route::get('get-alumno', [\App\Http\Controllers\AlumnoController::class, 'getAll'])->name( 'api-getAll');
-Route::put('save-alumno', [\App\Http\Controllers\Alumnocontroller::class, 'save'])->name('api-save');
-Route::delete('delete-alumno/{id}', [\App\Http\Controllers\Alumnocontroller::class, 'deleteAlumno'])->name('api-deleteAlumno');
-Route::post('edit-alumno/{id}', [\App\Http\Controllers\Alumnocontroller::class, 'editAlumno'])->name('api-editAlumno');
+Route::put('save-alumno', [\App\Http\Controllers\AlumnoController::class, 'save'])->name('api-save');
+Route::delete('delete-alumno/{id}', [\App\Http\Controllers\AlumnoController::class, 'deleteAlumno'])->name('api-deleteAlumno');
+Route::post('edit-alumno/{id}', [\App\Http\Controllers\AlumnoController::class, 'editAlumno'])->name('api-editAlumno');
